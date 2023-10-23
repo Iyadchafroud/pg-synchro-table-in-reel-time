@@ -7,6 +7,8 @@ CREATE SUBSCRIPTION sub_name CONNECTION 'dbname=postgres host=172.17.0.2 user=po
 -- now when i modify  or insert line , it make the synch in reel time  in the specific table
 
 --## monitoring
+--One row per server process, showing information related to the current activity of that process, such as state and current query. See pg_stat_activity for details
+select * from pg_stat_activity	
 --The pg_stat_replication view will contain one row per logical replication
 select * from pg_stat_replication
 --The pg_stat_subscription  view will contain one row per logical subscription
