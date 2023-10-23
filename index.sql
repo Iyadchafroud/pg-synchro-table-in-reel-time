@@ -10,3 +10,8 @@ select * from pg_stat_replication_slots
 
 --The pg_stat_replication_slots view will contain one row per logical replication slot, showing statistics about its usage.
 
+select * from pg_stat_wal_receiver 
+-- The pg_stat_wal_receiver view will contain only one row, showing statistics about the WAL receiver from that receiver's connected server.
+
+
+
