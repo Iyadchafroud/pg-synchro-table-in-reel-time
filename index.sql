@@ -16,4 +16,6 @@ select * from pg_stat_replication_slots
 select * from pg_stat_wal_receiver 
 
 
+---The pg_stat_subscription_stats view will contain one row per subscription.
+select * from pg_stat_subscription_stats
 
