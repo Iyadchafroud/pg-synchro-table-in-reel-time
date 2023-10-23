@@ -5,3 +5,8 @@
 CREATE SUBSCRIPTION sub_name CONNECTION 'dbname=postgres host=172.17.0.2 user=postgres password=password' PUBLICATION pub_name;
 
 -- now when i modify  or insert line , it make the synch in reel time  in the specific table
+
+select * from pg_stat_replication_slots
+
+--The pg_stat_replication_slots view will contain one row per logical replication slot, showing statistics about its usage.
+
